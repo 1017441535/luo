@@ -1,0 +1,83 @@
+.w {
+    width: 1190px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.shortcut {
+    line-height: 36px;
+    background-color: rgb(216, 216, 216);
+}
+.top a {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+.top-nav a {
+    float: left;    
+}
+.top-nav span {
+    float: left;    
+    margin: 0 15px;
+    font-size: 12px;
+}
+.logo {
+    display: block;
+    width: 150px;
+    height: 80px;
+}
+.header > a {
+    display: block;
+}
+.search {
+    float: left;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.search-top input {
+    width: 430px;
+    height: 36px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    outline: none;
+    border: 3px solid #cc1c38;
+    float: left;
+}
+.search-top span {
+    display: block;
+    width: 44px;
+    line-height: 44px;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    background-color: #cc1c38;
+    float: left;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.gouwuche a {
+    width: 100px;
+    height: 44px;
+    display: block;
+    font-size: 20px;
+    color: #cc1c38;
+    background-color: #fff;
+    border: 1px solid #cc1c38;
+}
+.gouwuche span {
+    display: block;
+    font-size: 16px;
+    color: rgb(17, 16, 17);
+}
