@@ -13,11 +13,25 @@
       "unicode_decimal": 983417
     },
     {
+      "icon_id": "372265",
+      "name": "cc-top",
+      "font_class": "cc-top",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
       "icon_id": "487023",
       "name": "人",
       "font_class": "ren",
       "unicode": "e619",
       "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "572617",
+      "name": "QQ",
+      "font_class": "qq",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
     },
     {
       "icon_id": "814447",
@@ -41,11 +55,53 @@
       "unicode_decimal": 59058
     },
     {
+      "icon_id": "978354",
+      "name": "微信",
+      "font_class": "gongzhonghao",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "1186194",
+      "name": "星",
+      "font_class": "iconfontxingxing",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "1236815",
+      "name": "心",
+      "font_class": "03",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
       "icon_id": "1554897",
       "name": "菜单",
       "font_class": "caidan",
       "unicode": "e606",
       "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "1766313",
+      "name": "人物-人",
+      "font_class": "ren1",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "2077531",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "4867111",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
     },
     {
       "icon_id": "5640058",
@@ -55,6 +111,13 @@
       "unicode_decimal": 58919
     },
     {
+      "icon_id": "6240886",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
       "icon_id": "9557790",
       "name": "更多",
       "font_class": "gengduo",
@@ -62,11 +125,25 @@
       "unicode_decimal": 58939
     },
     {
+      "icon_id": "11683687",
+      "name": "更多",
+      "font_class": "ziyuan",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
       "icon_id": "13604675",
       "name": "向右",
       "font_class": "xiangyou",
       "unicode": "e65a",
       "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "14009239",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e57c",
+      "unicode_decimal": 58748
     }
   ]
 }

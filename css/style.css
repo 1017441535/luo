@@ -1,8 +1,8 @@
-.w {
-    width: 1190px;
-    margin: auto;
-}
+
 a {
+    text-decoration: none;
+}
+a:hover {
     text-decoration: none;
 }
 .clearfix::after {
@@ -16,6 +16,7 @@ a {
 .fr {
     float: right;
 }
+/* 顶部 */
 .shortcut {
     line-height: 36px;
     background-color: rgb(216, 216, 216);
@@ -35,8 +36,10 @@ a {
 }
 .logo {
     display: block;
-    width: 150px;
-    height: 80px;
+    width: 120px;
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 30px;
 }
 .header > a {
     display: block;
@@ -48,7 +51,7 @@ a {
 }
 .search-top input {
     width: 430px;
-    height: 36px;
+    height: 44px;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     outline: none;
@@ -67,17 +70,208 @@ a {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
+.gouwuche {
+    margin-top: 2px;
+    margin-left: 70px;
+    border: 2px solid #e0dede;
+    border-radius: 5px;
+}
 .gouwuche a {
-    width: 80px;
-    height: 44px;
+    line-height: 32px;
     display: block;
     font-size: 20px;
     color: #cc1c38;
+    padding: 0 10px;
     background-color: #fff;
-    border: 1px solid #cc1c38;
 }
 .gouwuche span {
     display: block;
     font-size: 14px;
-    color: rgb(17, 16, 17);
+    color: #cc1c38;
+    margin-left: 10px;
+}
+/* 导航 */
+.subnav {
+    border-bottom: 2px solid #cc1c38;
+}
+.subnav>div {
+    display: flex;
+    justify-content: left;
+    position: relative;
+}
+.subnav .all-product {
+    margin-top: 50px;
+    height: 40px;
+    background-color: #cc1c38;
+    font-size: 16px;
+    color: #fff;
+    padding-right: 67px;
+    position: relative;
+}
+.subnav .all-product > span{
+    line-height: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-size: 28px;
+    color: #fff;
+}
+.sub-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.sub-nav li a {
+    display: block;
+    margin-top: 52px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    padding: 5px 30px;
+    margin-left: 20px;
+    color: #333;
+    font-size: 16px;
+}
+.sub-nav li:first-child a {
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 35px;
+    background-color: #cc1c38;
+}
+.sub-nav li:hover a {
+    color: #fff;
+    border-radius: 20px;
+    background-color: #cc1c38;
+} 
+.subnav-first {
+    position: absolute;
+    left: 0;
+    top: 41px;
+    width: 231px;
+    padding: 18px 0;
+    background-color: rgb(241, 238, 238);
+    display: none;
+    z-index: 10;
+}
+.all-product:hover .subnav-first {
+    display: block;
+}
+.subnav-first a {
+    float: left;
+    display: block;
+    line-height: 35px;
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    color: #030303;
+}
+.subnav-first a:hover {
+    background-color: #cc1c38;
+    color: #fff;
+}
+.banner {
+    background: rgb(236, 235, 235);
+}
+.lunbotu {
+    padding: 0;
+}
+.lunbo {
+    position: relative;
+}
+.lunbo div {
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+.lunbo img {
+    width: 100%;
+}
+.fenge {
+    padding: 30px 0 20px 0;
+    position: relative;
+}
+.fenge p {
+    font-size: 24px;
+    text-align: center;
+    color: #030303;
+    font-weight: bold;
+}
+.fenge p span{
+    padding-right: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #cc1c38;
+    font-weight: bold;
+}
+.fenge > span {
+    display: block;
+    width: 40%;
+    border: 1px solid rgb(199, 199, 199);
+    position: absolute;
+    top: 50px;
+}
+.fenge .left { 
+    left: 0;
+}
+.fenge .right {
+    right: 0;
+}
+.discount {
+    margin-bottom: 20px;
+}
+.discount > a {
+    /* width: 100%; */
+    position: relative;
+    margin: auto;
+    max-width: 310px;
+    display: block;
+    border: 1px solid #e0dede;
+    padding: 3px;
+}
+.discount > a > div > div{
+    padding: 5px;
+}
+.discount > a > div > div > img{
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+.p {
+    font-size: 20px;
+    color: #cc1c38;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.discount-list .title {
+    font-size: 14px;
+    color: #222;
+    padding: 5px 10px 0 10px;
+    line-height: 20px;
+    height: 45px;
+}
+.discount-list .pirce {
+    font-size: 18px;
+    color: #cc1c38;
+    padding: 5px 10px 0 10px;
+    font-weight: bold;
+}
+.discount-list .people {
+    font-size: 14px;
+    color: #222;
+    position: absolute;
+    right: 30px;
+    bottom: 7px;
+}
+.more {
+    text-align: center;
+}
+.more a {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+.more a:hover {
+    color: #cc1c38;
 }

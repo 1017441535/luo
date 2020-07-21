@@ -1,0 +1,52 @@
+@media screen and (max-width: 1200px) {
+    .search {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .search {
+        margin-left: 50px;
+    }
+    .gouwuche {
+        display: none;
+    }
+    .sub-nav {
+        display: none;
+    }
+}
+@media screen and (max-width: 792px) {
+    .search {
+        margin-left: 30px;
+    }
+    .search input{
+        width: 300px;
+    }
+    .gouwuche {
+        display: none;
+    }
+    .sub-nav {
+        display: none;
+    }
+}
+@media screen and (max-width: 554px) {
+    .search {
+        margin-left: 30px;
+    }
+    .logo {
+        width: 80px;
+        height: 60px;
+        padding: 0;
+    }
+    .search input{
+        width: 150px;
+    }
+    .gouwuche {
+        display: none;
+    }
+    .sub-nav {
+        display: none;
+    }
+    .top > a {
+        display: none;
+    }
+}
