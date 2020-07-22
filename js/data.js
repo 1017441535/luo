@@ -1,3 +1,4 @@
+// 轮播图
 $.ajax({
     type: "get",
     url: "http://localhost/w/website/bannerList",
@@ -31,6 +32,7 @@ $.ajax({
         })
     }
 })
+// 商品模板
 function list(item) {
     var div = `<div class="col-sm-6 col-md-4 col-lg-3 discount">
         <a href="" class="discount-list">
@@ -87,3 +89,6 @@ $.ajax({
 
     }
 })
+
+
+
