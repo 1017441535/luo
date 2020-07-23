@@ -12,3 +12,14 @@ $(function () {
     })
 
 })
+$(".search-top > span").click(function() {
+    var sousuo = $(".search-top > input").val();
+    $.ajax({
+        type: "get",
+        url: "http://localhost/w/website/findGoodsList?info=" + sousuo,
+        success: function(play){
+            location.href = "./classification.html?info=" + sousuo;
+        }
+    })
+    // $(".search-top > inpt").value()
+})

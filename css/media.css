@@ -49,4 +49,64 @@
     .top > a {
         display: none;
     }
+    /* 登录注册 */
+    .user-registration {
+        padding-top: 40px;
+    }
+    .sign-body {
+        width: 350px;
+    }
+    .sign-body > p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    .sign-body .sign-input {
+        width: 60%;
+    }
+    .sign-body .sign-input span{
+        margin: 5px 0 20px 0;
+    }
+    .sign-body .sign-input input{
+        margin: 5px 0 20px 0;
+    }
+    .sign-body .sign-input p {
+        font-size: 12px;
+        left: 18%;
+        top: 38px;
+    }
+    /* .sign-in {
+        width: 50%;
+        height: 40px;
+        background-color: #fff;
+        font-size: 16px;
+        color: #cc1c38;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        margin-left: 25%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        border-radius: 3px;
+    } */
+    .sign-bottom {
+        width: 12%;
+        margin: auto;
+    }
+    .sign-bottom a {
+        color: rgb(197, 197, 197);
+        font-size: 14px;
+    }
+    .sign-bottom a:hover {
+        color: #cc1c38;
+    }
+    .yanzheng {
+        width: 310px;
+        margin: auto;
+    }
+    .sign-yz {
+        width: 80%;
+        margin-left: 40px;
+    }
 }
