@@ -17,7 +17,6 @@ $.ajax({
                 </div>
                 `
             )
-
         })
         lunbo.find("img").css("height", "400px");
     }
@@ -37,8 +36,9 @@ $.ajax({
 })
 // 商品模板
 function list(item) {
+    // console.log(item);
     var div = `<div class="col-sm-6 col-md-4 col-lg-3 discount">
-        <a class="discount-list">
+        <a href="./details.html?id=${item.item_id}" class="discount-list">
             <div>
                 <div><img src="${item.pict_url}" alt=""></div>
                 <p class="title">${item.title}</p>
@@ -60,7 +60,6 @@ $.ajax({
                 discount.html(discount.html() + list(item));
             }
         })
-
     }
 })
 $.ajax({
@@ -73,6 +72,7 @@ $.ajax({
             if(index < 8) {
                 discount.html(discount.html() + list(item));
             }
+
         })
 
     }
@@ -90,6 +90,4 @@ $.ajax({
         })
     }
 })
-
-
 

@@ -5,7 +5,7 @@ $(function () {
         var nameTxt = JSON.parse(localStorage.getItem("userinfo")).username;
         $(".dlcg").html(nameTxt);
     }
-    $(".tcdl").click(function () {
+    $(".tcdl1").click(function () {
         localStorage.clear();
         $(".tcdl").css("display", "none");
         $(".dlzc").css("display", "inline");
@@ -21,5 +21,4 @@ $(".search-top > span").click(function() {
             location.href = "./classification.html?info=" + sousuo;
         }
     })
-    // $(".search-top > inpt").value()
 })

@@ -6,7 +6,6 @@ function http() {
         type: "get",
         url: "http://localhost/w/website/findGoodsList?info=" + info + "&pageNo=" + index,
         success: function (play) {
-            console.log(play);
             var data = play.data.tbk_dg_material_optional_response.result_list.map_data;
             var discount = $(".d4");
             discount.empty();
