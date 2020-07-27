@@ -1,9 +1,11 @@
-var img = decodeURIComponent(location.search);
-var img = img.split("=")[1];
+var imgID = decodeURIComponent(location.search);
+var imgID = imgID.split("=")[1];
+// localStorage.clear()
+var iimg;
 function image() {
     $.ajax({
         type: "get",
-        url: "http://localhost/w/website/findGoodsDetail?info=" + img,
+        url: "http://localhost/w/website/findGoodsDetail?info=" + imgID,
         success: function (image) {
             var text = image.data.detail.tbk_item_info_get_response.results.n_tbk_item[0];
             // console.log(image)
@@ -13,7 +15,6 @@ function image() {
             $(".s-img3").attr("src", text.small_images.string[2]);
             $(".s-img4").attr("src", text.small_images.string[3]);
             
-            // console.log(image.data.detail.tbk_item_info_get_response.results.n_tbk_item[0].title)
             $(".det-title").html(text.title);
             $(".cat-leaf-name").html(text.cat_leaf_name);
             $(".cat-name").html(text.cat_name);
@@ -23,12 +24,25 @@ function image() {
             $(".reserve_price").html("￥ " + text.reserve_price);
             $(".now-price").html("￥ " + text.zk_final_price);
 
+            $(".button1").click(function() {
+                var arr = JSON.parse(localStorage.getItem("id"))||[];
+                var obj = {
+                    id: imgID,
+                    shopImg: text.pict_url,
+                    title: text.title,
+                    price: text.zk_final_price
+                }
+                arr.push(obj)
+                localStorage.setItem("id",JSON.stringify(arr));
+                location.href = "./shopping-cart.html";
+            })
+
             $(function () {
                 a = $(".xqbottom .left .a")
                 var drag = $(".xqbottom .w .left .drag")
                 var jing = $(".xqbottom .w .jing")
                 var b1 = $(".xqbottom .b1")
-                var img = $(".jing img")
+                iimg = $(".jing img")
                 var maxW = b1.width() - drag.width();
                 var maxH = b1.height() - drag.height();
                 b1.mouseenter(function () {
@@ -39,16 +53,16 @@ function image() {
                         var x = e.pageX - b1.offset().left - drag.width() / 2;
                         x = x < 0 ? 0 : x;
                         x = x > maxW ? maxW : x;
-                        a = (img.width() - jing.width()) / maxW;
+                        a = (iimg.width() - jing.width()) / maxW;
 
                         drag.css("left", x + "px");
-                        img.css("marginLeft", -a * x + "px");
+                        iimg.css("marginLeft", -a * x + "px");
                         var y = e.pageY - b1.offset().top - drag.height() / 2;
                         y = y < 0 ? 0 : y;
                         y = y > maxH ? maxH : y;
-                        b = (img.height() - jing.height()) / maxH;
+                        b = (iimg.height() - jing.height()) / maxH;
                         drag.css("top", y + "px");
-                        img.css("marginTop", -b * y + "px");
+                        iimg.css("marginTop", -b * y + "px");
                     })
                 })
                 b1.mouseleave(function () {
@@ -64,18 +78,16 @@ function image() {
                         $(item).css("background-image", img1)
                         var img2 = b1.find(".b").css("background-image")
                         img2 = img2.split('"')[1]
-                        img.attr("src", img2)
+                        iimg.attr("src", img2)
                     })
                 })
-
-
             })
-
         }
     })
 }
-$(".group").html(img);
+$(".group").html(iimg);
 image();
 $(".pro-det > img").click(function () {
     $(".detail-img").attr("src", $(this).attr("src"));
 })
+
