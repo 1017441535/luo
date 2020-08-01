@@ -25,16 +25,22 @@ function image() {
             $(".now-price").html("￥ " + text.zk_final_price);
 
             $(".button1").click(function() {
-                var arr = JSON.parse(localStorage.getItem("id"))||[];
-                var obj = {
-                    id: imgID,
-                    shopImg: text.pict_url,
-                    title: text.title,
-                    price: text.zk_final_price
+                if(localStorage.getItem("token")){
+                    var arr = JSON.parse(localStorage.getItem("id"))||[];
+                    var obj = {
+                        id: imgID,
+                        shopImg: text.pict_url,
+                        title: text.title,
+                        price: text.zk_final_price,
+                        num: 1
+                    }
+                    arr.push(obj)
+                    localStorage.setItem("id",JSON.stringify(arr));
+                    location.href = "./shopping-cart.html";
+                }else{
+                    location.href = "./sign-in.html";
                 }
-                arr.push(obj)
-                localStorage.setItem("id",JSON.stringify(arr));
-                location.href = "./shopping-cart.html";
+               
             })
 
             $(function () {

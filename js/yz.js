@@ -79,7 +79,7 @@ $(".zc").click(function () {
     if (yhname && password && phone && email) {
         $.ajax({
             type: "post",
-            url: "http://192.168.1.103:3000/users/register",
+            url: "http://192.168.1.105:3000/users/register",
             data: {
                 username: $(".yhm").val(),
                 password: $(".mima").val(),
@@ -101,7 +101,7 @@ $(".dl").click(function () {
     if (yhname && password) {
         $.ajax({
             type: "post",
-            url: "http://192.168.1.103:3000/users/login",
+            url: "http://192.168.1.105:3000/users/login",
             data: {
                 username: $(".yhm").val(),
                 password: $(".mima").val()
@@ -114,7 +114,7 @@ $(".dl").click(function () {
                     
                     $.ajax({
                         type: "get", 
-                        url: "http://192.168.1.103:3000/users/userinfo",
+                        url: "http://192.168.1.105:3000/users/userinfo",
                         data: {
                             username: $(".yhm").val(),
                             token: data1.token

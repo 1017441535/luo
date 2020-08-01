@@ -643,3 +643,8 @@ h6 span{
     background-color: #cc1c38;
     line-height: 35px;
 }
+.delete > span{
+    border: 1px solid #dedede;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
